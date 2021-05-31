@@ -1,0 +1,31 @@
+<html>
+    <head>
+		<script>
+		function validate(){
+    	 var string=document.getElementById("text");   
+	     var patt = /^[a-zA-Z\s]+$/;
+         
+         if(string.value.match(patt)){
+             document.getElementById("result").innerHTML="Entered text contains only alphabets";
+         }
+       else{
+           document.getElementById("result").innerHTML="Entered text doesn't contains only alphabets";
+       }
+    
+    	}
+        
+
+		</script>
+	</head>
+	<body>
+	<h1>Validating Alphabets</h1>
+    <div>
+        Enter your text to validate<br>
+        <input type="textarea" id="text"><br>
+        <button id="validate" onclick="validate()">Validate Alphabets</button>
+    </div>
+    <div id="result">
+        
+    </div>
+	</body>
+</html>
